@@ -1,0 +1,161 @@
+1. In an MPLS cloud, what routers forward packets by Label only ?
+	
+A. P
+B. BGP
+C. CE------------------------
+D. GE
+E. PE	---------------
+F. C
+	
+2. Local preference attribute is affecting best path election
+	
+A. on eBGP routers
+B. on iBGP routers--------------------------------------------------------------------------------------------------------------------
+C. on both eBGP and iBGP
+	
+3. Route targets ..
+	
+A. specifies which routes to use for label switching path--------------------------------------------------------------------------------
+B. are used for external VPNs
+C. specifies the gateway of BGP route
+	
+4. Which algorithm does BGP use?
+	
+A. Shortest Path
+B. Path Vector-----------------------------------------------------------------------------------------------------------------------------
+	
+5. Is it possible to manage a router interface via a VRF connected route?
+
+A. True
+B. False	-------------------------------------------------------------------------------------------------------------------------------
+	
+6. A MikroTik system administrator implemented OSPF Routing protocol in the network. But realized that he has a static route on the routers. What can be done to make the static route work as a failover whenever the dynamic routing protocol fails.
+	
+A. He should increase the administrative distance of the static route----------------------------------------------------------------------
+B. Delete all static routes because there is no way for it to work with OSPF
+C. He should use "netwatch" to trigger static routes whenever OSPF fails
+D. He should manually disable the static routes and enable them whenever OSPF fails
+	
+7. Which of the following attributes are considered first, when eBGP determines the best path ?
+	
+A. Origin
+B. As path length------------------------------------------------------------------------------------------------------------------------
+C. Local Preference
+	
+8. Do iBGP routers exchange weight attribute ?
+
+A. True
+B. False	------------------------------------------------------------------------------------------------------------------------------
+	
+9. Check the correct statements about MPLS
+	
+A. The MPLS label field has 32 bits-------------------------------------------------
+B. Using MPLS TE, traffic can be forwarded based on source address.xxxxxxxxxxxxxxxxxxxxx
+C. A MPLS packet can have more than one label------------------------------------------------
+D. MPLS labels are inserted before layer 2 headersxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+	
+10. Which description regarding OSPF Network LSAs is correct?
+	
+A. They are originated by every router in OSPF network. They include all routers on the link, interfaces, the cost of the link, and any known neighbor on the link-------------
+B. They are originated by Area Border Routers and are sent into a single area to advertise destinations outside that areaxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+C. They are originated by Area Border Router and are sent into a single area to advertise an Autonomous System Border Routerxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx
+D. They are originated by the DR on every multi-access network. They include all attached routers including the DR itself------------------------------------------------------
+	
+11. BGP path prepending is possible on MikroTik router only by using routing filter.
+	
+A. True------------------------------------------------------------------------------------------------------------------------------
+B. False
+	
+12. There are two routes in the routing table:
+0 dst-addr=10.1.1.0/24 distance=10 gateway=10.10.10.10
+1 dst-addr=10.1.1.4/30 distance=20 gateway=10.20.20.20
+Which gateway will be used to send packet with destination IP address 10.1.1.6
+	
+A. 10.20.20.20-----------------------------------------------------------------------------------------------------------------------------
+B. 10.10.10.10
+C. none, because distance is >= 10
+D. both
+	
+13. If router receives packet with TTL=1 then:
+	
+A. packet will not be forwarded-----------------------------------------------------
+B. packet will be forwarded only to next L3 device
+C. packet will always reach its destination
+	
+14. What happens with the MPLS label when the packet reaches the last router on the MPLS cloud?
+	
+A. MPLS label is removed----------------------------------------------------------------
+B. MPLS label is not removed
+C. MPLS label can be chosen to be removed or not be removed
+	
+15. You are planning the setup of a MPLS network.
+Is it possible to have several Layer 2 tunnels created automatically over MPLS cloud?
+
+A. True-----------------------------------------------------------------------------------
+B. False	
+	
+16. Confederation AS should not include any other routers without any confederations configuration outside of sub-autonomous system.
+
+A. True--------------------------------------------------------------------------------
+B. False
+
+17. Which of the following ways can traffic be forwarded into TE tunnels
+in RouterOS:
+	
+A. Traffic cannot be forwarded to TE tunnel
+B. By setting the remote address of the VPLS pseudowire interface to the same as the TE tunnel remote address----------------------------------
+C. Using policy routing
+	
+18. In the main routing table we can install a route that has a gateway in a different routing table:
+	
+A. If we specify the VRF table in the gateway field when we add the route
+B. If we specify the VRF table and interface which belongs to the VRF instance in the gateway field when we add the route--------------------------------
+C. If in the gateway field, we only specify an interface which belongs to a VRF instance
+D. None of the above
+	
+19. BGP routers often use IP addresses configured on loopback interfaces. Select the true statement:
+	
+A. Only private IP addresses (10.x.x.x., 172.16.x.x., 192.168.x.x) are acceptable on loopback interfaces in MikroTik routers-------------------------------------
+B. Loopback interfaces are used for BGP sessions to save public IP addresses.
+C. Loopback interfaces are used mostly for exterior BGP (eBGP), because it helps keeping common IP addressing between different Autonomous Systems.
+D. BGP sessions using IP addresses configured on physical interfaces are more vulnerable to network failures than BGP sessions using loopback interfaces.-----------------
+	
+20. If you want to prepend many times your own AS, when announcing routes via EBGP, you have to create a Routing Filter with the set-bgp-prepend attribute, and set it in the...
+	
+A. Both In Filter and Out Filter of peer definition.
+B. In Filter of peer definition.
+C. Out Filter of peer definition.--------------------------------------------------------------------------------------------------------
+D. Once the Routing Filter is created, it will act in any peer definition inside the router.
+	
+21. Is the BGP propagating only the best path to reach the destination?
+
+A. True------------------------------------------------------------------------------------------------------------------------
+B. False	
+	
+22. The target scope can be used for:
+	
+A. To build a FailOver System between two or more gateways
+B. To resolve nexthops that are not directly connected to the router-----------------------------------------
+C. To configure several routes with different costs and distances
+	
+23. Which protocol and port is used for BGP transport?	
+	
+A. UDP/646
+B. TCP/179
+C. UDP/53
+D. TCP/646------------------------------------------------------------------------------------------------------
+	
+24. Which routing table is used to apply recursive routing at MikroTik RouterOS
+	
+A. It is not possible
+B. It is only possible in the main routing table-----------------------------------------------------------------
+C. It is possible in all the routing tables installed in a router
+D. It is only possible on the x86 platform
+	
+25. Which attribute must be sent in the BGP update packet and must be recognized by all implementations of BGP ?
+	
+A. well-known discretionary
+B. optional non-transitive
+C. optional transitive
+D. well-known mandatory
+	
